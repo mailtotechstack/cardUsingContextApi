@@ -6,7 +6,7 @@ import Toggler from "./component/Toggler"
 export default function App(){
   const [toggle, setToggle] = useState("dark");
   return(<themeContext.Provider value={{toggle, setToggle}}>
-      <div className={`h-screen flex flex-col justify-center items-center ${toggle === "dark" ? "bg-black text-white": "bg-white text-black"}`}>
+      <div className={`h-screen flex flex-col justify-center items-center ${toggle === "dark" ? "bg-white text-black" : "bg-black text-white"}`}>
         <Toggler />
         <Card />
       </div>
